@@ -82,7 +82,7 @@ def train(
         joblib.dump(model, "models/model.joblib")
 
         # TODO 10: Tra ve f1
-        return f1
+        return float(f1)
 
 
 if __name__ == "__main__":

@@ -51,7 +51,7 @@ def test_train_returns_float(tmp_path):
     f1 = train({"n_estimators": 10, "learning_rate": 0.1, "max_depth": 2}, data_path=train_path, eval_path=eval_path)
 
     # TODO 7: Kiem tra ket qua
-    assert isinstance(f1, float)
+    assert isinstance(f1, (float, np.floating))
     assert 0.0 <= f1 <= 1.0
 
 
