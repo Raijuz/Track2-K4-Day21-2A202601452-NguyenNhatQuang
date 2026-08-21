@@ -29,7 +29,9 @@ jobs:
           python-version: "3.10"
 
       - name: Install dependencies
-        run: pip install -r requirements.txt
+        run: |
+          pip install --upgrade "setuptools<72"
+          pip install -r requirements.txt
 
       - name: Run unit tests
         env:
@@ -57,7 +59,9 @@ jobs:
           python-version: "3.10"
 
       - name: Install dependencies
-        run: pip install -r requirements.txt
+        run: |
+          pip install --upgrade "setuptools<72"
+          pip install -r requirements.txt
 
       - name: Authenticate to Cloud Storage
         # TODO 2: Ghi noi dung credentials ra file tam va set bien moi truong xac thuc.
