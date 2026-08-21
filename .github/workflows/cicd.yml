@@ -4,9 +4,10 @@ on:
   push:
     branches: [main]
     paths:
-      - 'data/**.dvc'
-      - 'src/**.py'
+      - 'data/**'
+      - 'src/**'
       - 'params.yaml'
+      - '.github/workflows/cicd.yml'
   workflow_dispatch:
 
 jobs:
