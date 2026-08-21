@@ -183,4 +183,4 @@ jobs:
             # <dien lenh bash o day>
             sudo systemctl restart income-api
             sleep 5
-            curl -sf http://localhost:8080/healthz && echo "Health check passed." || exit 1
+            curl -sf http://localhost:8080/healthz && echo "Health check passed." || exit 1# trigger
