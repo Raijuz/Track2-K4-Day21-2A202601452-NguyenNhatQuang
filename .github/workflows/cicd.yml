@@ -32,8 +32,9 @@ jobs:
         run: pip install -r requirements.txt
 
       - name: Run unit tests
-        # TODO 1: Viet lenh de chay pytest tren thu muc tests/ voi co -v
-        run: pytest tests/ -v
+        env:
+          PYTHONPATH: .
+        run: python -m pytest tests/ -v
 
 
   # ---------------------------------------------------------------------------
